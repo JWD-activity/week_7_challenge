@@ -63,133 +63,187 @@
         </div>
       </nav>
       <!-- Navbar ends ------------->
-      <!-- Search starts ----------->
+      <!-- Banner starts ----------->
       <div class="d-flex justify-content-center search-from"></div>
-      <!-- Search ends ------------->
+      <!-- Banner ends ------------->
     </header>
     <!-- Header ends ------------->
 
     <!-- Main starts ------------->
     <main>
-      <section id="potos" class="py-5">
-        <div class="container-fluid">
-          <div class="row">
-            <h1 class="col">Latest Photos</h1>
-            <form
-              class="
-                col
-                d-flex
-                justify-content-end
-                align-items-center
-                pageInput
-              "
-            >
-              page
+      <div class="row">
+        <div class="col">
+          <h1>Contact Page</h1>
+          <form action="">
+            <div class="form-group">
+              <!-- <label for="fullName" class="form-label">Name</label> -->
               <input
                 type="text"
-                class="form-control form-control-sm mx-1"
-                placeholder="1"
-                aria-label="pageNumber"
-                aria-describedby="addon-wrapping"
+                class="form-control"
+                id="fullName"
+                aria-describedby="inputFullName"
+                placeholder="Name"
+                required
               />
-              of 200
-            </form>
-          </div>
-          <div class="row">
-            <!-- poto 1 ----------->
-            <div class="card col-xl-3 col-lg-4 col-md-6">
-              <figure class="position-relative">
-                <img src="./img/img-01.jpg" alt="hangers" />
-                <figcaption
-                  class="position-absolute top-50 start-50 translate-middle"
-                >
-                  Hanger
-                </figcaption>
-              </figure>
-              <div
-                class="photo-info text-black-50 d-flex justify-content-between"
-              >
-                <span>18 Oct 2020</span>
-                <span>9,906 views</span>
-              </div>
             </div>
-            <!-- poto 2 ----------->
-            <div class="card col-xl-3 col-lg-4 col-md-6">
-              <figure class="position-relative">
-                <img src="./img/img-01.jpg" alt="hangers" />
-                <figcaption
-                  class="position-absolute top-50 start-50 translate-middle"
-                >
-                  Hanger
-                </figcaption>
-              </figure>
-              <div
-                class="photo-info text-black-50 d-flex justify-content-between"
-              >
-                <span>18 Oct 2020</span>
-                <span>9,906 views</span>
-              </div>
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                aria-describedby="inputEmail"
+                placeholder="Email"
+                required
+              />
             </div>
-            <!-- poto 3 ----------->
-            <div class="card col-xl-3 col-lg-4 col-md-6">
-              <figure class="position-relative">
-                <img src="./img/img-01.jpg" alt="hangers" />
-                <figcaption
-                  class="position-absolute top-50 start-50 translate-middle"
-                >
-                  Hanger
-                </figcaption>
-              </figure>
-              <div
-                class="photo-info text-black-50 d-flex justify-content-between"
-              >
-                <span>18 Oct 2020</span>
-                <span>9,906 views</span>
-              </div>
+            <div class="form-group">
+              <select class="form-select" aria-label="Default select subject">
+                <option selected>Subject</option>
+                <option value="1">Sales & Marketing</option>
+                <option value="2">Creative Design</option>
+                <option value="3">UI / UX</option>
+              </select>
             </div>
-            <!-- poto 4 ----------->
-            <div class="card col-xl-3 col-lg-4 col-md-6">
-              <figure class="position-relative">
-                <img src="./img/img-01.jpg" alt="hangers" />
-                <figcaption
-                  class="position-absolute top-50 start-50 translate-middle"
-                >
-                  Hanger
-                </figcaption>
-              </figure>
-              <div
-                class="photo-info text-black-50 d-flex justify-content-between"
-              >
-                <span>18 Oct 2020</span>
-                <span>9,906 views</span>
-              </div>
+            <div class="form-group">
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+                placeholder="Message"
+                required
+              ></textarea>
             </div>
-          </div>
-          <div class="row">
-            <nav aria-label="Page navigation example">
-              <ul
-                class="
-                  pagination
-                  d-flex
-                  justify-content-center
-                  align-items-center
-                  mb-0
-                "
-              >
-                <li class="page-item">
-                  <a class="page-link" href="#">Previous</a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                  <a class="page-link" href="#">Next</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form>
         </div>
-      </section>
+        <div class="col">
+          <h1>Our Address</h1>
+          <p>
+            Quisque eleifend mi et nisi eleifend pretium. Duis porttitor
+            accumsan arcu id rhoncus. Praesent fermentum venenatis ipsum, eget
+            vestibulum purus.
+          </p>
+          <p>
+            Nulla ut scelerisque elit, in fermentum ante. Aliquam congue mattis
+            erat, eget iaculis enim posuere nec. Quisque risus turpis, tempus in
+            iaculis.
+          </p>
+          <address>
+            <span>120-240 Fusce eleifend varius tempus</span>
+            <span>Duis consectetur at ligula 10660</span>
+          </address>
+
+          <ul>
+            <li>
+              <a href="#">Email: info@company.com</a>
+            </li>
+            <li><a href="#">Tel: 010-020-0340</a></li>
+            <li><a href="#"> URL: www.company.com</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h1>Our Location</h1>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d58756.64782134143!2d-43.394365!3d-23.013104!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bdb695cd967b7%3A0x171cdd035a6a9d84!2sAv.%20L%C3%BAcio%20Costa%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%20Brazil!5e0!3m2!1sen!2sus!4v1621914960949!5m2!1sen!2sus"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <figure class="card">
+            <img
+              src="./img/people-1.jpg"
+              alt="Chief Executive Officer"
+              class="card-img-top"
+            />
+            <figcaption class="card-body">
+              <h2>Ryan White</h2>
+              <h3>Chief Executive Officer</h3>
+              <p>
+                Mauris ante tellus, feugiat nec metus non, bibendum semper
+                velit. Praesent laoreet urna id tristique fermentum. Morbi
+                venenatis dui quis diam mollis pellentesque.
+              </p>
+              <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Linked in</a></li>
+              </ul>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <figure class="card">
+            <img
+              src="./img/people-2.jpg"
+              alt="Chief Marketing Officer"
+              class="card-img-top"
+            />
+            <figcaption class="card-body">
+              <h2>Catherine Pinky</h2>
+              <h3>Chief Marketing Officer</h3>
+              <p>
+                Sed faucibus nec velit finibus accumsan. Sed varius augue et leo
+                pharetra, in varius lacus eleifend. Quisque ut eleifend lacus.
+              </p>
+              <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Linked in</a></li>
+              </ul>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <figure class="card">
+            <img
+              src="./img/people-3.jpg"
+              alt="Accounting Executive"
+              class="card-img-top"
+            />
+            <figcaption class="card-body">
+              <h2>Johnny Brief</h2>
+              <h3>Accounting Executive</h3>
+              <p>
+                Sed faucibus nec velit finibus accumsan. Sed varius augue et leo
+                pharetra, in varius lacus eleifend. Quisque ut eleifend lacus.
+              </p>
+              <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Linked in</a></li>
+              </ul>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <figure class="card">
+            <img
+              src="./img/people-4.jpg"
+              alt="Creative Art Director #C69"
+              class="card-img-top"
+            />
+            <figcaption class="card-body">
+              <h2>George Nelson</h2>
+              <h3>Creative Art Director #C69</h3>
+              <p>
+                Nunc convallis facilisis congue. Curabitur gravida rutrum justo
+                sed pulvinar. Pellentesque ac ante in erat bibendum dignissim.
+              </p>
+              <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Linked in</a></li>
+              </ul>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
     </main>
     <!-- Main ends --------------->
 
