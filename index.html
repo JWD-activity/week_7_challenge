@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <!-- Fontawesom ----->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+      crossorigin="anonymous"
+    />
+    <!-- Google fonts ----->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Customize CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Catalog_z</title>
+  </head>
+  <body>
+    <!-- Header starts ----------->
+    <header>
+      <!-- Navbar starts ----------->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><i class="fas fa-film mr-2">Catalog-Z</i></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse flex-row-reverse"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Potos</a>
+              <a class="nav-link" href="#">Videos</a>
+              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar ends ------------->
+      <!-- Search starts ----------->
+      <div class="d-flex justify-content-center search-from">
+        <form class="d-flex align-items-center">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+      <!-- Search ends ------------->
+    </header>
+    <!-- Header ends ------------->
+
+    <!-- Main starts ------------->
+    <main>
+      <section id="potos" class="py-5">
+        <div class="container-fluid">
+          <div class="row">
+            <h1 class="col">Latest Photos</h1>
+            <form
+              class="
+                col
+                d-flex
+                justify-content-end
+                align-items-center
+                pageInput
+              "
+            >
+              page
+              <input
+                type="text"
+                class="form-control form-control-sm mx-1"
+                placeholder="1"
+                aria-label="pageNumber"
+                aria-describedby="addon-wrapping"
+              />
+              of 200
+            </form>
+          </div>
+          <div class="row">
+            <!-- poto 1 ----------->
+            <div class="card col-xl-3 col-lg-4 col-md-6">
+              <figure class="position-relative">
+                <img src="./img/img-01.jpg" alt="hangers" />
+                <figcaption
+                  class="position-absolute top-50 start-50 translate-middle"
+                >
+                  Hanger
+                </figcaption>
+              </figure>
+              <div
+                class="photo-info text-black-50 d-flex justify-content-between"
+              >
+                <span>18 Oct 2020</span>
+                <span>9,906 views</span>
+              </div>
+            </div>
+            <!-- poto 2 ----------->
+            <div class="card col-xl-3 col-lg-4 col-md-6">
+              <figure class="position-relative">
+                <img src="./img/img-01.jpg" alt="hangers" />
+                <figcaption
+                  class="position-absolute top-50 start-50 translate-middle"
+                >
+                  Hanger
+                </figcaption>
+              </figure>
+              <div
+                class="photo-info text-black-50 d-flex justify-content-between"
+              >
+                <span>18 Oct 2020</span>
+                <span>9,906 views</span>
+              </div>
+            </div>
+            <!-- poto 3 ----------->
+            <div class="card col-xl-3 col-lg-4 col-md-6">
+              <figure class="position-relative">
+                <img src="./img/img-01.jpg" alt="hangers" />
+                <figcaption
+                  class="position-absolute top-50 start-50 translate-middle"
+                >
+                  Hanger
+                </figcaption>
+              </figure>
+              <div
+                class="photo-info text-black-50 d-flex justify-content-between"
+              >
+                <span>18 Oct 2020</span>
+                <span>9,906 views</span>
+              </div>
+            </div>
+            <!-- poto 4 ----------->
+            <div class="card col-xl-3 col-lg-4 col-md-6">
+              <figure class="position-relative">
+                <img src="./img/img-01.jpg" alt="hangers" />
+                <figcaption
+                  class="position-absolute top-50 start-50 translate-middle"
+                >
+                  Hanger
+                </figcaption>
+              </figure>
+              <div
+                class="photo-info text-black-50 d-flex justify-content-between"
+              >
+                <span>18 Oct 2020</span>
+                <span>9,906 views</span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <nav aria-label="Page navigation example">
+              <ul
+                class="
+                  pagination
+                  d-flex
+                  justify-content-center
+                  align-items-center
+                  mb-0
+                "
+              >
+                <li class="page-item">
+                  <a class="page-link" href="#">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Main ends --------------->
+
+    <!-- Footer starts ----------->
+    <footer class="bg-grey--dark">
+      <div class="row container mx-auto">
+        <div class="col">
+          <h1>About Catalog-Z</h1>
+          <p>
+            Catalog-Z is free Bootstrap 5 Alpha 2 HTML Template for video and
+            photo websites. You can freely use this TemplateMo layout for a
+            front-end integration with any kind of CMS website.
+          </p>
+        </div>
+        <div class="col">
+          <h1>Our Links</h1>
+          <ul>
+            <li><a href="#">Advertise</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Our Company</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+          </ul>
+          <a href="#">Terms of Use</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="row container mx-auto">
+        <span>Copyright 2020 Catalog-Z Company. All rights reserved.</span>
+        <span>Designed by TemplateMo</span>
+      </div>
+    </footer>
+    <!-- Footer ends ------------->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.search-from {
+  background-image: url(../img/hero.jpg);
+  background-size: cover;
+  background-position: center 60%;
+  min-height: 200px;
+}
+
+.search-from form {
+  width: 35%;
+  margin: 20px 0;
+}
+
+.card {
+  border: none;
+}
+
+.card img {
+  border-radius: 0;
+  width: 100%;
+}
+
+.card figure > figcaption,
+.card figure > figcaption:link,
+.card figure > figcaption:visited {
+  padding: 4rem 7rem;
+  color: transparent;
+}
+
+.card figure > figcaption:hover {
+  visibility: visible;
+  background-color: rgba(0, 0, 0, 0.384);
+  /* padding: 4rem 7rem; */
+}
+
+.pageInput > input {
+  width: 8%;
+  text-align: center;
+}
+
+/* .form-control {
+  width: 30%;
+  text-align: center;
+} */
+
+/* Background color */
+.bg-grey--dark {
+  background-color: #eee;
+}
