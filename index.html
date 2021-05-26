@@ -22,7 +22,7 @@
     <!-- Google fonts ----->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,900&display=swap"
       rel="stylesheet"
     />
     <!-- Customize CSS -->
@@ -35,8 +35,9 @@
       <!-- Navbar starts ----------->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"
-            ><i class="fas fa-film mr-2">Catalog-Z</i></a
+          <a class="navbar-brand d-flex" href="#"
+            ><i class="fas fa-film me-3 col align-self-center heading-green"></i
+            >Catalog-Z</a
           >
           <button
             class="navbar-toggler"
@@ -72,7 +73,9 @@
             placeholder="Search"
             aria-label="Search"
           />
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <button class="btn btn-success" type="submit">
+            <i class="fas fa-search px-3"></i>
+          </button>
         </form>
       </div>
       <!-- Search ends ------------->
@@ -83,8 +86,8 @@
     <main>
       <section id="potos" class="py-5">
         <div class="container-fluid">
-          <div class="row">
-            <h1 class="col">Latest Photos</h1>
+          <div class="row mb-3">
+            <h1 class="col heading-green">Latest Photos</h1>
             <!-- Page of 200 ------------->
             <form
               class="
@@ -93,6 +96,7 @@
                 justify-content-end
                 align-items-center
                 pageInput
+                heading-green
               "
             >
               page
@@ -106,6 +110,7 @@
               of 200
             </form>
           </div>
+          <!-- photo collection ---------->
           <div class="row">
             <!-- poto 1 ----------->
             <div class="card col-xl-3 col-lg-4 col-sm-6 col-xs-12 mb-3">
@@ -844,68 +849,107 @@
               </div>
             </div>
           </div>
-          <div class="row">
-            <nav aria-label="Page navigation example">
-              <ul
-                class="
-                  pagination
-                  d-flex
-                  justify-content-center
-                  align-items-center
-                  mb-0
-                "
+          <!-- pagenation ---------------->
+          <nav
+            aria-label="Page navigation example"
+            class="
+              pagination
+              row
+              d-flex
+              justify-content-between
+              align-items-center
+            "
+          >
+            <div class="col page-item">
+              <a
+                class="btn btn-primary px-5 py-2"
+                href="#"
+                aria-label="Previous"
+                >Previous</a
               >
-                <li class="page-item">
-                  <a class="page-link" href="#">Previous</a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                  <a class="page-link" href="#">Next</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+            </div>
+            <div class="col d-flex justify-content-center align-items-center">
+              <div class="page-item active" aria-current="page">
+                <a class="page-link px-3 mx-2" href="#">1</a>
+              </div>
+              <div class="page-item">
+                <a class="page-link px-3 mx-2" href="#">2</a>
+              </div>
+              <div class="page-item">
+                <a class="page-link px-3 mx-2" href="#">3</a>
+              </div>
+              <div class="page-item">
+                <a class="page-link px-3 mx-2" href="#">4</a>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-end">
+              <a
+                class="btn btn-primary px-5 py-2 align-self-end page-item"
+                href="#"
+                aria-label="Next page"
+                >Next Page
+              </a>
+            </div>
+          </nav>
         </div>
       </section>
     </main>
     <!-- Main ends --------------->
 
     <!-- Footer starts ----------->
-    <footer class="bg-grey--dark">
-      <div class="row container mx-auto">
-        <div class="col">
-          <h1>About Catalog-Z</h1>
-          <p>
-            Catalog-Z is free Bootstrap 5 Alpha 2 HTML Template for video and
-            photo websites. You can freely use this TemplateMo layout for a
-            front-end integration with any kind of CMS website.
+    <footer class="bg-grey-dark">
+      <div class="row container pb-3 pt-5 mx-auto">
+        <div class="col-6 px-5">
+          <h3 class="heading-green">About Catalog-Z</h3>
+          <p class="text-black-50 py-3 lh-lg">
+            Catalog-Z is free
+            <a href="https://getbootstrap.com/" target="_blank">Bootstrap 5</a>
+            Alpha 2 HTML Template for video and photo websites. You can freely
+            use this TemplateMo layout for a front-end integration with any kind
+            of CMS website.
           </p>
         </div>
-        <div class="col">
-          <h1>Our Links</h1>
-          <ul>
-            <li><a href="#">Advertise</a></li>
-            <li><a href="#">Support</a></li>
-            <li><a href="#">Our Company</a></li>
-            <li><a href="#">Contact</a></li>
+        <div class="col-3 ps-5">
+          <h3 class="heading-green">Our Links</h3>
+          <ul class="py-3 lh-lg">
+            <li><a href="#" class="text-black-50">Advertise</a></li>
+            <li><a href="#" class="text-black-50">Support</a></li>
+            <li><a href="#" class="text-black-50">Our Company</a></li>
+            <li><a href="#" class="text-black-50">Contact</a></li>
           </ul>
         </div>
-        <div class="col">
-          <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Pinterest</a></li>
+        <div class="col-3 ps-5 text-end">
+          <ul class="d-flex justify-content-end m-bottom-lg">
+            <li>
+              <a href="#"><i class="fab fa-facebook text-secondary"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter text-secondary"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram text-secondary"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-pinterest text-secondary"></i></a>
+            </li>
           </ul>
-          <a href="#">Terms of Use</a>
-          <a href="#">Privacy Policy</a>
+          <a href="#" class="d-block mb-2 text-black-50">Terms of Use</a>
+          <a href="#" class="d-block text-black-50">Privacy Policy</a>
         </div>
       </div>
-      <div class="row container mx-auto">
-        <span>Copyright 2020 Catalog-Z Company. All rights reserved.</span>
-        <span>Designed by TemplateMo</span>
+      <div class="row container pb-4 mx-auto">
+        <div class="col-6 text-black-50 px-5">
+          Copyright 2020 Catalog-Z Company. All rights reserved.
+        </div>
+        <div class="col-6 text-black-50 text-end ps-5">
+          Designed by
+          <a
+            href="https://templatemo.com/"
+            target="_blank"
+            class="text-black-50"
+            >TemplateMo</a
+          >
+        </div>
       </div>
     </footer>
     <!-- Footer ends ------------->
