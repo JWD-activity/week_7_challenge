@@ -1,8 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -98,9 +93,28 @@ figure {
   border: none;
 }
 
-.card img {
-  border-radius: 0;
+iframe {
   width: 100%;
+  height: 430px;
+  border: none;
+}
+
+.fa-envelope,
+.fa-phone,
+.fa-globe {
+  margin-right: 1rem;
+}
+
+.contact-list li a {
+  color: rgba(0, 0, 0, 0.5);
+}
+.contact-list li a:hover {
+  color: #2d9e91;
+}
+
+.form-control,
+.form-select {
+  padding: 1rem;
 }
 
 .item-name {
@@ -201,9 +215,34 @@ footer a:hover {
 .text-design {
   text-align: right;
 }
+
 /* Background color */
 .bg-grey-dark {
   background-color: #eee;
+}
+
+button[type="submit"] {
+  padding: 1rem 3.5rem;
+  border: none;
+  background-color: #2d9e91;
+}
+
+button[type="submit"]:hover {
+  background-color: #22796f;
+}
+
+.fa-dark {
+  background-color: rgb(241, 241, 241);
+}
+.fa-linkedin {
+  padding: 1rem;
+  margin: 0 0 0 8px;
+  transition: all 0.3s;
+}
+
+.fa-linkedin:hover {
+  background-color: #2d9e91;
+  color: #fff !important;
 }
 
 /* Button color */
@@ -215,6 +254,11 @@ footer a:hover {
 .heading-green {
   color: #2d9e91;
 }
+
+.heading-pink {
+  color: #e78cba;
+}
+
 .text-lihgt-grey {
   color: #cccbcb;
 }
