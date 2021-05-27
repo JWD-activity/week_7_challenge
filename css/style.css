@@ -11,6 +11,7 @@ body {
 h1 {
   font-size: 2rem;
   font-weight: 600;
+  margin: 0;
 }
 
 h3 {
@@ -93,7 +94,6 @@ a {
 figure {
   overflow: hidden;
 }
-
 .card {
   border: none;
 }
@@ -155,13 +155,6 @@ figure {
   justify-content: flex-end;
 }
 
-@media only screen and (max-width: 700px) {
-  .page-item,
-  .page-item.next-page {
-    justify-content: center;
-  }
-}
-
 /* Footer */
 footer .row:first-child {
   padding: 3rem 10rem 2rem 10rem;
@@ -208,40 +201,6 @@ footer a:hover {
 .text-design {
   text-align: right;
 }
-
-@media only screen and (max-width: 1200px) {
-  footer .row:first-child {
-    padding: 3rem 4rem 2rem 4rem;
-  }
-  footer .row:last-child {
-    padding: 0 4rem 2rem 4rem;
-  }
-}
-
-@media only screen and (max-width: 990px) {
-  .p-left {
-    padding-left: 0.8rem;
-  }
-
-  .text-copyright,
-  .text-design {
-    text-align: center;
-  }
-}
-
-@media only screen and (max-width: 580px) {
-  .footer-small-box {
-    justify-content: flex-start;
-  }
-
-  .fa-facebook {
-    margin: 0;
-  }
-  .text-align-left {
-    text-align: start;
-  }
-}
-
 /* Background color */
 .bg-grey-dark {
   background-color: #eee;
@@ -263,4 +222,56 @@ footer a:hover {
 /* Spacing */
 .m-bottom-lg {
   margin-bottom: 4.5rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  /* Footer */
+  footer .row:first-child {
+    padding: 3rem 4rem 2rem 4rem;
+  }
+  footer .row:last-child {
+    padding: 0 4rem 2rem 4rem;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  /* Footer */
+  .p-left {
+    padding-left: 0.8rem;
+  }
+
+  .text-copyright,
+  .text-design {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  /* Pagenation */
+  .page-item,
+  .page-item.next-page {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  /* Search bar */
+  .search-from form {
+    max-width: 350px;
+  }
+  /* Photos */
+  h1.heading-green {
+    font-size: 1.5rem;
+  }
+  /* Footer */
+  .footer-small-box {
+    justify-content: flex-start;
+  }
+
+  .fa-facebook {
+    margin: 0;
+  }
+  .text-align-left {
+    text-align: start;
+  }
 }
