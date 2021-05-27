@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -93,28 +98,9 @@ figure {
   border: none;
 }
 
-iframe {
+.card img {
+  border-radius: 0;
   width: 100%;
-  height: 430px;
-  border: none;
-}
-
-.fa-envelope,
-.fa-phone,
-.fa-globe {
-  margin-right: 1rem;
-}
-
-.contact-list li a {
-  color: rgba(0, 0, 0, 0.5);
-}
-.contact-list li a:hover {
-  color: #2d9e91;
-}
-
-.form-control,
-.form-select {
-  padding: 1rem;
 }
 
 .item-name {
@@ -192,14 +178,15 @@ footer a:hover {
 .fa-pinterest {
   background-color: #fff;
   padding: 1rem;
-  margin: 0 0 0 8px;
+  margin: 0 8px 0 0;
   transition: all 0.3s;
 }
 
 .fa-facebook:hover,
 .fa-twitter:hover,
 .fa-instagram:hover,
-.fa-pinterest:hover {
+.fa-pinterest:hover,
+.fa-linkedin:hover {
   background-color: #2d9e91;
   color: #fff !important;
 }
@@ -216,13 +203,10 @@ footer a:hover {
   text-align: right;
 }
 
-/* Background color */
-.bg-grey-dark {
-  background-color: #eee;
-}
-
+/* Section- contact-info */
+/* contact submit */
 button[type="submit"] {
-  padding: 1rem 3.5rem;
+  /* padding: 1rem 3.5rem; */
   border: none;
   background-color: #2d9e91;
 }
@@ -231,25 +215,47 @@ button[type="submit"]:hover {
   background-color: #22796f;
 }
 
+/* .form-control,
+.form-select {
+  padding: 1rem;
+} */
+
+/* Address */
+.fa-envelope,
+.fa-phone,
+.fa-globe {
+  margin-right: 1rem;
+}
+
+.contact-list li a {
+  color: rgba(0, 0, 0, 0.5);
+}
+.contact-list li a:hover {
+  color: #2d9e91;
+}
+
+/* Location */
+iframe {
+  width: 100%;
+  height: 430px;
+  border: none;
+}
+
+/* Section-people-info */
 .fa-dark {
   background-color: rgb(241, 241, 241);
 }
+
 .fa-linkedin {
   padding: 1rem;
-  margin: 0 0 0 8px;
+  margin: 0 8px 0 0;
   transition: all 0.3s;
-}
-
-.fa-linkedin:hover {
-  background-color: #2d9e91;
-  color: #fff !important;
 }
 
 /* Button color */
 .btn-light {
   background-color: #eee;
 }
-
 /* Text color */
 .heading-green {
   color: #2d9e91;
@@ -261,6 +267,11 @@ button[type="submit"]:hover {
 
 .text-lihgt-grey {
   color: #cccbcb;
+}
+
+/* Background color */
+.bg-grey-dark {
+  background-color: #eee;
 }
 
 /* Spacing */
