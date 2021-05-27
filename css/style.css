@@ -37,12 +37,37 @@ a {
 
 .navbar-brand {
   font-size: 1.6rem;
+  color: #696969 !important;
+}
+.navbar-brand:hover {
   color: #2d9e91 !important;
 }
 
 .nav-link {
   font-size: 1.2rem;
   margin: 0 0 0 1.6rem;
+  border-bottom: 3px solid transparent;
+}
+
+.menu-1-active,
+.menu-1:hover {
+  border-color: #0d6efd;
+}
+.menu-2-active,
+.menu-2:hover {
+  border-color: #ed4e50;
+}
+.menu-3-active,
+.menu-3:hover {
+  border-color: #198754;
+}
+.menu-4-active,
+.menu-4:hover {
+  border-color: #ece032;
+}
+
+.navbar-nav a:hover {
+  color: #2d9e91 !important;
 }
 
 /* Search box */
@@ -54,13 +79,13 @@ a {
 }
 
 .search-from form {
-  width: 35%;
+  width: 450px;
   margin: 20px 0;
 }
 
 /* Input- Page of 200 */
 .pageInput > input {
-  width: 8%;
+  width: 40px;
   text-align: center;
 }
 
@@ -126,9 +151,32 @@ figure {
   border-radius: 0.25rem;
 }
 
+.page-item.next-page {
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 700px) {
+  .page-item,
+  .page-item.next-page {
+    justify-content: center;
+  }
+}
+
 /* Footer */
+footer .row:first-child {
+  padding: 3rem 10rem 2rem 10rem;
+}
+
+footer .row:last-child {
+  padding: 0 10rem 2rem 10rem;
+}
+
 footer a:hover {
   color: #2d9e91 !important;
+}
+
+.footer-small-box {
+  justify-content: flex-end;
 }
 
 .fa-facebook,
@@ -149,6 +197,51 @@ footer a:hover {
   color: #fff !important;
 }
 
+.p-left {
+  padding-left: 4rem;
+}
+
+.text-copyright {
+  text-align: left;
+}
+
+.text-design {
+  text-align: right;
+}
+
+@media only screen and (max-width: 1200px) {
+  footer .row:first-child {
+    padding: 3rem 4rem 2rem 4rem;
+  }
+  footer .row:last-child {
+    padding: 0 4rem 2rem 4rem;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .p-left {
+    padding-left: 0.8rem;
+  }
+
+  .text-copyright,
+  .text-design {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .footer-small-box {
+    justify-content: flex-start;
+  }
+
+  .fa-facebook {
+    margin: 0;
+  }
+  .text-align-left {
+    text-align: start;
+  }
+}
+
 /* Background color */
 .bg-grey-dark {
   background-color: #eee;
@@ -159,9 +252,12 @@ footer a:hover {
   background-color: #eee;
 }
 
-/* Heading color */
+/* Text color */
 .heading-green {
   color: #2d9e91;
+}
+.text-lihgt-grey {
+  color: #cccbcb;
 }
 
 /* Spacing */
