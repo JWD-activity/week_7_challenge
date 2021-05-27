@@ -22,7 +22,7 @@
     <!-- Google fonts ----->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <!-- Customize CSS -->
@@ -35,8 +35,8 @@
       <!-- Navbar starts ----------->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"
-            ><i class="fas fa-film mr-2">Catalog-Z</i></a
+          <a class="navbar-brand d-flex" href="#"
+            ><i class="fas fa-film me-3 col align-self-center"></i>Catalog-Z</a
           >
           <button
             class="navbar-toggler"
@@ -54,10 +54,15 @@
             id="navbarNavAltMarkup"
           >
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Potos</a>
-              <a class="nav-link" href="#">Videos</a>
-              <a class="nav-link" href="#">About</a>
-              <a class="nav-link" href="#">Contact</a>
+              <a
+                class="nav-link menu-1 menu-1-active active"
+                aria-current="page"
+                href="#"
+                >Potos</a
+              >
+              <a class="nav-link menu-2" href="#">Videos</a>
+              <a class="nav-link menu-3" href="#">About</a>
+              <a class="nav-link menu-4" href="#">Contact</a>
             </div>
           </div>
         </div>
@@ -70,13 +75,12 @@
     <!-- Header ends ------------->
 
     <!-- Main starts ------------->
-    <main>
-      <div class="row">
-        <div class="col">
-          <h1>Contact Page</h1>
+    <main class="container-fluid">
+      <section id="contact-info" class="row">
+        <div class="col-lg-4 col-md-12">
+          <h1 class="heading-green my-5">Contact Page</h1>
           <form action="">
             <div class="form-group">
-              <!-- <label for="fullName" class="form-label">Name</label> -->
               <input
                 type="text"
                 class="form-control"
@@ -116,19 +120,19 @@
             <button type="submit" class="btn btn-primary">Send</button>
           </form>
         </div>
-        <div class="col">
-          <h1>Our Address</h1>
-          <p>
+        <div class="col-lg-4 col-md-12">
+          <h1 class="heading-green my-5">Our Address</h1>
+          <p class="text-black-50 lh-lg">
             Quisque eleifend mi et nisi eleifend pretium. Duis porttitor
             accumsan arcu id rhoncus. Praesent fermentum venenatis ipsum, eget
             vestibulum purus.
           </p>
-          <p>
+          <p class="text-black-50 lh-lg">
             Nulla ut scelerisque elit, in fermentum ante. Aliquam congue mattis
             erat, eget iaculis enim posuere nec. Quisque risus turpis, tempus in
             iaculis.
           </p>
-          <address>
+          <address class="text-black-50">
             <span>120-240 Fusce eleifend varius tempus</span>
             <span>Duis consectetur at ligula 10660</span>
           </address>
@@ -141,19 +145,16 @@
             <li><a href="#"> URL: www.company.com</a></li>
           </ul>
         </div>
-        <div class="col">
-          <h1>Our Location</h1>
+        <div class="col-lg-4 col-md-12">
+          <h1 class="heading-green my-5">Our Location</h1>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d58756.64782134143!2d-43.394365!3d-23.013104!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bdb695cd967b7%3A0x171cdd035a6a9d84!2sAv.%20L%C3%BAcio%20Costa%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%20Brazil!5e0!3m2!1sen!2sus!4v1621914960949!5m2!1sen!2sus"
-            width="600"
-            height="450"
-            style="border: 0"
             allowfullscreen=""
             loading="lazy"
           ></iframe>
         </div>
-      </div>
-      <div class="row">
+      </section>
+      <section id="people-info" class="row my-5">
         <div class="col-lg-3 col-md-6 col-sm-12">
           <figure class="card">
             <img
@@ -162,9 +163,9 @@
               class="card-img-top"
             />
             <figcaption class="card-body">
-              <h2>Ryan White</h2>
-              <h3>Chief Executive Officer</h3>
-              <p>
+              <h1 class="heading-green">Ryan White</h1>
+              <h3 class="heading-pink my-4">Chief Executive Officer</h3>
+              <p class="text-black-50">
                 Mauris ante tellus, feugiat nec metus non, bibendum semper
                 velit. Praesent laoreet urna id tristique fermentum. Morbi
                 venenatis dui quis diam mollis pellentesque.
@@ -185,9 +186,9 @@
               class="card-img-top"
             />
             <figcaption class="card-body">
-              <h2>Catherine Pinky</h2>
-              <h3>Chief Marketing Officer</h3>
-              <p>
+              <h1 class="heading-green">Catherine Pinky</h1>
+              <h3 class="heading-pink my-4">Chief Marketing Officer</h3>
+              <p class="text-black-50">
                 Sed faucibus nec velit finibus accumsan. Sed varius augue et leo
                 pharetra, in varius lacus eleifend. Quisque ut eleifend lacus.
               </p>
@@ -207,9 +208,9 @@
               class="card-img-top"
             />
             <figcaption class="card-body">
-              <h2>Johnny Brief</h2>
-              <h3>Accounting Executive</h3>
-              <p>
+              <h1 class="heading-green">Johnny Brief</h1>
+              <h3 class="heading-pink my-4">Accounting Executive</h3>
+              <p class="text-black-50">
                 Sed faucibus nec velit finibus accumsan. Sed varius augue et leo
                 pharetra, in varius lacus eleifend. Quisque ut eleifend lacus.
               </p>
@@ -229,9 +230,9 @@
               class="card-img-top"
             />
             <figcaption class="card-body">
-              <h2>George Nelson</h2>
-              <h3>Creative Art Director #C69</h3>
-              <p>
+              <h1 class="heading-green">George Nelson</h1>
+              <h3 class="heading-pink my-4">Creative Art Director #C69</h3>
+              <p class="text-black-50">
                 Nunc convallis facilisis congue. Curabitur gravida rutrum justo
                 sed pulvinar. Pellentesque ac ante in erat bibendum dignissim.
               </p>
@@ -243,44 +244,68 @@
             </figcaption>
           </figure>
         </div>
-      </div>
+      </section>
     </main>
     <!-- Main ends --------------->
 
     <!-- Footer starts ----------->
-    <footer class="bg-grey--dark">
-      <div class="row container mx-auto">
-        <div class="col">
-          <h1>About Catalog-Z</h1>
-          <p>
-            Catalog-Z is free Bootstrap 5 Alpha 2 HTML Template for video and
-            photo websites. You can freely use this TemplateMo layout for a
-            front-end integration with any kind of CMS website.
+    <footer class="bg-grey-dark container-fluid">
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <h3 class="heading-green">About Catalog-Z</h3>
+          <p class="text-black-50 py-3 lh-lg">
+            Catalog-Z is free
+            <a href="https://getbootstrap.com/" target="_blank">Bootstrap 5</a>
+            Alpha 2 HTML Template for video and photo websites. You can freely
+            use this TemplateMo layout for a front-end integration with any kind
+            of CMS website.
           </p>
         </div>
-        <div class="col">
-          <h1>Our Links</h1>
-          <ul>
-            <li><a href="#">Advertise</a></li>
-            <li><a href="#">Support</a></li>
-            <li><a href="#">Our Company</a></li>
-            <li><a href="#">Contact</a></li>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 p-left">
+          <h3 class="heading-green">Our Links</h3>
+          <ul class="py-3 lh-lg">
+            <li><a href="#" class="text-black-50">Advertise</a></li>
+            <li><a href="#" class="text-black-50">Support</a></li>
+            <li><a href="#" class="text-black-50">Our Company</a></li>
+            <li><a href="#" class="text-black-50">Contact</a></li>
           </ul>
         </div>
-        <div class="col">
-          <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Pinterest</a></li>
+        <div class="col-lg-3 col-md-9 col-sm-9 col-xs-12 text-end">
+          <ul class="d-flex m-bottom-lg footer-small-box">
+            <li>
+              <a href="#"><i class="fab fa-facebook text-secondary"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter text-secondary"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram text-secondary"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-pinterest text-secondary"></i></a>
+            </li>
           </ul>
-          <a href="#">Terms of Use</a>
-          <a href="#">Privacy Policy</a>
+          <a href="#" class="d-block mb-2 text-black-50 text-align-left"
+            >Terms of Use</a
+          >
+          <a href="#" class="d-block text-black-50 text-align-left"
+            >Privacy Policy</a
+          >
         </div>
       </div>
-      <div class="row container mx-auto">
-        <span>Copyright 2020 Catalog-Z Company. All rights reserved.</span>
-        <span>Designed by TemplateMo</span>
+      <div class="row">
+        <div class="col-lg-6 col-md-12 text-black-50 text-copyright">
+          Copyright 2020 Catalog-Z Company. All rights reserved.
+        </div>
+        <div class="col-lg-6 col-md-12 6 text-black-50 ps-5 text-design">
+          Designed by
+          <a
+            href="https://templatemo.com/"
+            target="_blank"
+            class="text-black-50"
+            >TemplateMo</a
+          >
+        </div>
       </div>
     </footer>
     <!-- Footer ends ------------->
