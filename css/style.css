@@ -30,6 +30,14 @@ li {
 a {
   text-decoration: none;
 }
+/* 
+.navbar-collapse {
+  background-color: red;
+  flex-basis: 20%;
+  flex-grow: 0;
+
+  flex-shrink: 0;
+} */
 
 /* Navbar */
 .fa-film {
@@ -74,9 +82,9 @@ a {
 /* Search box */
 .search-from {
   background-image: url(../img/hero.jpg);
-  background-size: cover;
-  background-position: center 60%;
   min-height: 200px;
+  background-position: center 60%;
+  background-size: cover;
 }
 
 .search-from form {
