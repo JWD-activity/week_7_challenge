@@ -1,6 +1,7 @@
 ## week_7_challenge
-[week_7_challenge](https://jwd-activity.github.io/week_7_challenge/)
+https://jwd-activity.github.io/week_7_challenge/
 
+## Technologies used
 ![Generic badge](https://img.shields.io/badge/HTML-blue.svg)
 ![Generic badge](https://img.shields.io/badge/CSS-brightgreen.svg) 
 ![Generic badge](https://img.shields.io/badge/Bootstrap-blueviolet.svg)
